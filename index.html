@@ -63,6 +63,9 @@
 	        </div>
 	    </div>
 	</div>
+	<div class="preloader">
+		<div class="loader"></div>
+	</div>
 	<!-- <audio autoplay preload="">
 		<source src="img/music.mp3" type="audio/mpeg">
 	</audio> -->
@@ -281,7 +284,7 @@
 						<a href="#" class="portfolio__image portfolio--shadow">
 							<img class="w-100 portfolio__image--item" src="img/port1_1.jpg" alt="">
 						</a>
-						<a class="portfolio__btn" href="#">
+						<a class="portfolio__btn" href="cases.html">
 							Больше кейсов
 						</a>
 						<div class="portfolio__case">
@@ -404,7 +407,16 @@
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 		<script>
+			$(document).ready( function() {
+				setTimeout(function(){
+					var preloader = $('.preloader'),
+						loader = $('.loader');
 
+					if(!preloader.hasClass('done')) {
+						preloader.addClass('done');
+					}
+				}, 1000);
+			});
 			$('.menus__burger__line').click(function() {
 				var menu 		= $('.menu'),
 					burger  	= $('.menus__burger__line'),
