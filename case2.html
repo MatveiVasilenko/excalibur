@@ -93,7 +93,7 @@
 	<section class="section__white section__cases h-100">
 		<div class="container h-100">
 			<div class="row h-100">
-				<div class="col-md-8">
+				<div class="col-md-8 wow fadeInLeft">
 					<div class="title color--red pb-5">PR-PLANET</div>
 					<div class="row">
 						<div class="col-md-8 offset-md-2">
@@ -106,7 +106,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 d-flex flex-column justify-content-between text-center text-md-left">
+				<div class="col-md-4 d-flex flex-column justify-content-between text-center text-md-left wow fadeInRight">
 					<div>
 						<div class="caseIn__titleIn pb-3">Клиент</div>
 						<div class="caseIn__text text-center text-md-left">студия "PR-PLANET</div>
@@ -131,10 +131,12 @@
 					<div class="concept__image dnone-md">
 						<img class="w-100" src="img/photo2-2.jpg">
 					</div>
-					<img class="w-100 py-5" src="img/photo2-1.jpg">
+					<div class="concept__image1">
+						<img class="w-100" src="img/photo2-1.jpg">
+					</div>
 				</div>
-				<div class="col-md-5 offset-md-1">
-					<div class="concept__title pb-5">
+				<div class="col-md-5 offset-md-1 wow fadeInRight">
+					<div class="concept__title py-5">
 						Концепция
 					</div>
 					<div class="caseIn__text text-left">
@@ -143,9 +145,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row concept__pad">
 				<div class="col-md-4 offset-md-1">
-					<div class="concept__title--special py-5">
+					<div class="concept__title--special py-5 mt-md-5">
 						Особенности
 					</div>
 				</div>
@@ -184,10 +186,14 @@
 				</div>
 			</div>
 			<div class="row">
-				<img class="w-100 caseIn__screen" src="img/screen2-1.jpg">
+				<div class="col-12">
+					<img class="w-100 caseIn__screen" src="img/screen2-1.jpg">
+				</div>
 			</div>
 			<div class="row">
-				<img class="w-100 caseIn__screen" src="img/screen2-2.jpg">
+				<div class="col-12">
+					<img class="w-100 caseIn__screen" src="img/screen2-2.jpg">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -215,7 +221,7 @@
 	<section class="section__white section__cases">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 offset-md-3 caseIn__end text-center text-md-left">
+				<div class="col-lg-4 offset-lg-3 col-md-8 offset-md-2 caseIn__end text-center text-md-left">
 					<div class="py-5">
 						Команда PR-PLANET уже <span class="color--red">digital</span>-изировала свой бизнес.
 					</div>
@@ -235,12 +241,64 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     	<div class="modal-content">
       		<div class="modal-header">
-          		<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-          			<span aria-hidden="true">X</span>
+          		<button type="button" class="p-0" data-dismiss="modal" aria-label="Close">
+          			<div class="menus__burger__line testing">
+		                <div class="menus__burger__lines menus__burger__lines--black menus__burger__lines--rotate1"></div>
+		                <div class="menus__burger__lines menus__burger__lines--black menus__burger__lines--rotate2"></div>
+		            </div>
         		</button>
       		</div>
-			<div class="row">
-				
+			<div class="row px-5">
+				<div class="col-lg-7">
+						<div class="title ttu py-md-5 pt-5 mt-md-0 mt-3 pb-3 color--black">
+							Обcудим проект, который принесет вам <span class="color--red">прибыль?</span>
+						</div>
+						<div class="contact__item">
+							<a class="color--black" href="#">
+								+38 097 91 51 281
+							</a>
+							<a class="color--red" href="#">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+							<a class="color--red" href="#">
+								<i class="fab fa-whatsapp"></i>
+							</a>
+						</div>
+						<div class="contact__item color--black">
+							excalibur.project@gmail.com
+						</div>
+					</div>
+					<div class="col-lg-3 offset-lg-1 pt-md-5 pt-3">
+						<form class="message text-center">
+							<div class="form-group">
+							    <input type="name" class="form-control form__services"  placeholder="Как к Вам можно обращаться?">
+							</div>
+							<div class="form-group">
+							   	<input type="name" class="form-control form__services"  placeholder="Ваш номер телефона">
+							</div>
+							<div class="form__label">Когда Вам будет удобно обсудить проект?</div>
+							<div class="row">
+								<div class="col-6">
+									<select class="form-control form__check">
+										<option>09 августа</option>
+										<option>10 августа</option>
+										<option>11 августа</option>
+									</select>
+								</div>
+								<div class="col-">
+									<select class="form-control form__check">
+										<option>14:00</option>
+										<option>16:00</option>
+										<option>18:00</option>
+									</select>
+								</div>
+							</div>						
+							<button class="btn btn--first">
+								Оставить заявку
+							</button>
+						</form>
+					</div>
+				</div>
 			</div>
     	</div>
   </div>
@@ -248,6 +306,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 		<script>
 
